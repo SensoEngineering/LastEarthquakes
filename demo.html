@@ -1,0 +1,750 @@
+<html>
+<head>
+<title>NightWatch Event</title>
+</head> 
+
+<body>
+
+
+
+<!-- #################### HEADER TABLE AND NW LOGO #################### -->
+
+
+
+<table border-style="none" align="center">
+
+
+    <tr>
+        <td><img src="Report/Logos/NW_Event_Logo.png" alt="" border-style="none" height=110 width=348></img></th>
+        <td>
+            Eurasia Tunnel <br>
+            Earthquake and Structural Health Monitoring System <br>
+            Automatic Post-earthquake Report <br>
+        </td>
+
+        
+    </tr>
+    
+</table>
+
+
+
+<!-- #################### EVENT SUMMARY PAGE #################### -->
+
+
+
+<h1 align="center" style="color:#155890"; >
+    EVENT SUMMARY PAGE
+</h1>   
+
+<!-- Horizontal line -->
+<hr>
+
+<h4 style="color:#155890"; >
+    Date and Location of the Earthquake 
+</h4> 
+<p style="line-height:15%">
+    @EQDATEUTC @EQLOCATION
+</p> 
+
+<h4 style="color:#155890"; >
+    Time of the Earthquake 
+</h4> 
+<p style="line-height:15%">
+    @EQTIMEUTC (UTC)
+</p> 
+
+<h4 style="color:#155890"; >
+    Magnitude and Distance to the Tunnel 
+</h4> 
+<p style="line-height:15%">
+    M=@EQMAGNITUDE, Epicentral Distance=@EQDISTANCEkm
+</p> 
+
+<h4 style="color:#155890"; >
+    The Largest Acceleration Along the Tunnel 
+</h4> 
+<p style="line-height:15%">
+    @ABSMAXGROUP0 at @SENSORABSMAXGROUP0 direction
+</p> 
+
+<h4 style="color:#155890"; >
+    Significant Earthquake Duration In the Tunnel 
+</h4> 
+<p style="line-height:15%">
+    @EQDURATION @EQDURATIONTEXT
+</p> 
+
+<h4 style="color:#155890"; >
+    The Largest Acceleration on the Building Locations 
+</h4> 
+<p style="line-height:15%">
+    @ABSMAXGROUP1 at @SENSORABSMAXGROUP1 direction
+</p> 
+
+<h4 style="color:#155890"; >
+    The Largest Differential Seismic Joint Displacement 
+</h4> 
+<p style="line-height:15%">
+    @ABSMAXGROUP2 at @SENSORABSMAXGROUP2 direction
+</p> 
+
+<h4 style="color:#155890"; >
+    The Largest Differential Seismic Joint Displacement 
+</h4> 
+<p style="line-height:15%">
+    @ABSMAXRESIDUALGROUP2 at @SENSORABSMAXRESIDUALGROUP2 direction
+</p> 
+
+<h4 style="color:#155890"; >
+    The Residual Diameter Change at TBM Sections 
+</h4> 
+<p style="line-height:15%">
+    @ABSMAXRESIDUALGROUP3 at @SENSORABSMAXRESIDUALGROUP3 direction
+</p> 
+
+<h4 style="color:#155890"; >
+    The Largest Horizontal Deck Acceleration
+</h4> 
+<p style="line-height:15%">
+    @ABSMAXGROUP4 at @SENSORABSMAXGROUP4 direction
+</p> 
+
+<h4 style="color:#155890"; >
+    Health of the Monitoring System 
+</h4> 
+<p style="line-height:15%">
+    @HEALTHTEXT
+</p> 
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!-- #################### REVISION AND TITLES PAGE #################### -->
+<h1 align="center" style="color:#155890"; >
+    POST-EARTHQUAKE REPORTING
+</h1>   
+
+<!-- Horizontal line -->
+<hr>
+
+<p align="center">
+    @EQDATE @EQLOCATION EARTHQUAKE
+</p> 
+<br>
+
+<p align="center">
+    M=@EQMAGNITUDE, DISTANCE=@EQDISTANCEkm
+</p> 
+<br>
+
+<table align="center" border="1">
+  
+  <tr>
+    <th>
+        Revision History
+    </th>
+    <th>
+        Date
+    </th> 
+    <th>
+        Notes
+    </th>
+  
+    </tr>
+  <tr>
+    <td>
+        R0
+    </td>
+    <td>
+        @EQDATE
+    </td> 
+    <td>
+        This post-event was produced <br>
+        automatically by NightWatch without <br>
+        human review.
+    </td>
+  </tr>
+
+</table>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!-- #################### NW REPORT START #################### -->
+
+
+
+<h4 style="color:#155890"; >
+    1. INTRODUCTION
+</h3>          
+
+<p>
+    This post-event report is prepared based on the Eurasia Tunnel Operations Guidelines for Earthquake Situations. According to that, a short summary report needs to be prepared for earthquakes that satisfy one of the conditions below: 
+</p> 
+
+<ol>
+  <li>
+      Earthquakes of Mw>=6.0 within the radius of 300 to 400km from the tunnel mid-point or,
+  </li>
+  <li>
+      Earthquakes of Mw>=5.0 within the radius of 200 to 300km from the tunnel mid-point or,
+  </li>
+  <li>
+      Earthquakes of Mw>=4.5 within the radius of 100 to 200km from the tunnel mid-point or,
+  </li>
+  <li>
+      Earthquakes of Mw>=4.0 within the radius of 100km from the tunnel mid-point,
+  </li>
+</ol> 
+
+<p>
+    where M is the moment magnitude of the earthquake (Mw or ML, whichever is reported by Kandilli Observatory) and distance is the epicentral distance from the source to the mid-point of the tunnel.
+</p> 
+
+<p>
+    The summary report includes:
+</p> 
+
+<ul>
+  <li>
+      a short description of the earthquake (date, time, magnitude, location, depth, and distance to the tunnel)
+  </li>
+  <li>
+      maximum PGA values attained between the seismic joints
+  </li>
+  <li>
+      maximum deformations on the seismic joints
+  </li>
+  <li>
+      plot of the accelerations, response spectra and seismic joint displacements. 
+  </li>
+</ul>  
+
+<h3 style="color:#155890"; >
+    2. SUMMARY OF THE SEISMIC EVENT 
+</h3>  
+
+<p> 
+    On @EQDATEUTC at @EQTIMEUTC UTC time, an earthquake of M=@EQMAGNITUDE occurred @EQDISTANCEkm far from the mid-point of the tunnel.
+</p> 
+
+<img src="Report/CurrentReportFigures/EQMAP.png" alt="EQMAP" class="center">
+<figcaption>
+    Figure 1. Location of the epicentre of the event
+</figcaption>
+
+<h3 style="color:#155890"; >
+    3. MONITORING SYSTEM AND THE MEASUREMENTS  
+</h3> 
+
+<h4 style="color:#226B9C"; >
+    3.1. Monitoring System  
+</h4> 
+
+<p>
+    The Eurasia Tunnel SHM system consists of 66 channels (Figure 2). These are:
+</p> 
+
+<ul>
+  <li>
+      3 channels x 9 accelerometers along the TBM sections (ACC01-09)
+  </li>
+  <li>
+      3 channels x 1 accelerometers at VBE (ventilation Europe, VBE01)
+  </li>
+  <li>
+      3 channels x 2 accelerometers at OBA (Operation & Maintenance Building, OBA01-02)
+  </li>
+  <li>
+      3 channels x 3 accelerometers at upper deck locations (ACC10-12)
+  </li>
+  <li>
+      3 channels x 6 displacement sensors at seismic joints (SJ101-103 and SJ201-203)
+  </li>
+  <li>
+      1 channel x 3 displacement sensors measuring the tunnel diameter at mid-height (Disp1 - 3)
+  </li>
+</ul> 
+
+<p>
+    The accelerometers record hourly files with 200Hz sampling rate while the displacement sensors record hourly files with 20Hz sampling rate.
+</p> 
+
+<p>
+    The accelerometer sensors record data in 3 axes simultaneously, named E, N and Z. All accelerometer sensors are placed in a way that their East(E) direction coincides with the tunnel longitudinal axis towards Asia.
+</p> 
+
+<img src="Report/CurrentReportFigures/NW_Avrasya_Sensor_Locations.png" alt="SensorLocs" class="center" >
+<figcaption>
+    Figure 2. Eurasia Tunnel SHM system configuration
+</figcaption>
+
+<h4 style="color:#226B9C"; >
+    3.2. PGA Values Along the Tunnel
+</h4> 
+
+<p>
+    There are 9 accelerometers placed along the tunnel TBM sections. The chainages of the accelerometers are given below in Table 1. 
+</p> 
+
+<p>
+    Note that ACC6 and ACC7 sensors are placed between the seismic joints, within the sedimentary soil deposits. They usually exhibit higher in-tunnel accelerations. 
+</p> 
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<table align="center" border="1">
+
+    <caption>Table 1. Accelerometer chainages and the measured acceleration values</caption>
+  
+  <tr>
+    <th>
+        Accelerometer No
+    </th>
+    <th>
+        Chainage
+    </th> 
+    <th>
+        Soil Type
+    </th>
+    <th>
+        East(E) in gal
+    </th>
+    <th>
+        North(N) in gal
+    </th>
+    <th>
+        Vertical(Z) in gal
+    </th>
+  
+  </tr>
+  
+  <tr>
+    <td>
+        ACC1
+    </td>
+    <td>
+        6+138
+    </td> 
+    <td>
+        Trakya <br>
+        formation (rock)
+    </td>
+    <td>
+        @ABSMAXSENSOR0
+    </td>
+    <td>
+        @ABSMAXSENSOR1
+    </td>
+    <td>
+        @ABSMAXSENSOR2
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+        ACC2
+    </td>
+    <td>
+        6+538
+    </td> 
+    <td>
+        Trakya <br>
+        formation (rock)
+    </td>
+    <td>
+        @ABSMAXSENSOR3
+    </td>
+    <td>
+        @ABSMAXSENSOR4
+    </td>
+    <td>
+        @ABSMAXSENSOR5
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+        ACC3
+    </td>
+    <td>
+        6+938
+    </td> 
+    <td>
+        Trakya <br>
+        formation (rock)
+    </td>
+    <td>
+        @ABSMAXSENSOR6
+    </td>
+    <td>
+        @ABSMAXSENSOR7
+    </td>
+    <td>
+        @ABSMAXSENSOR8
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+        ACC4
+    </td>
+    <td>
+        7+338
+    </td> 
+    <td>
+        Trakya <br>
+        formation (rock)
+    </td>
+    <td>
+        @ABSMAXSENSOR9
+    </td>
+    <td>
+        @ABSMAXSENSOR10
+    </td>
+    <td>
+        @ABSMAXSENSOR11
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+        ACC5
+    </td>
+    <td>
+        7+738
+    </td> 
+    <td>
+        Trakya <br>
+        formation (rock)
+    </td>
+    <td>
+        @ABSMAXSENSOR12
+    </td>
+    <td>
+        @ABSMAXSENSOR13
+    </td>
+    <td>
+        @ABSMAXSENSOR14
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+        ACC6
+    </td>
+    <td>
+        8+136
+    </td> 
+    <td>
+        Sedimantary <br>
+        Soils 
+    </td>
+    <td>
+        @ABSMAXSENSOR15
+    </td>
+    <td>
+        @ABSMAXSENSOR16
+    </td>
+    <td>
+        @ABSMAXSENSOR17
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+        ACC7
+    </td>
+    <td>
+        8+336
+    </td> 
+    <td>
+        Sedimantary <br>
+        Soils 
+    </td>
+    <td>
+        @ABSMAXSENSOR18
+    </td>
+    <td>
+        @ABSMAXSENSOR19
+    </td>
+    <td>
+        @ABSMAXSENSOR20
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+        ACC8
+    </td>
+    <td>
+        8+736
+    </td> 
+    <td>
+        Trakya <br>
+        formation (rock)
+    </td>
+    <td>
+        @ABSMAXSENSOR21
+    </td>
+    <td>
+        @ABSMAXSENSOR22
+    </td>
+    <td>
+        @ABSMAXSENSOR23
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+        ACC9
+    </td>
+    <td>
+        9+309
+    </td> 
+    <td>
+        Trakya <br>
+        formation (rock)
+    </td>
+    <td>
+        @ABSMAXSENSOR24
+    </td>
+    <td>
+        @ABSMAXSENSOR25
+    </td>
+    <td>
+        @ABSMAXSENSOR26
+    </td>
+  </tr>
+
+</table>
+
+<p>
+    The 5% damped acceleration response spectrum of the largest recorded channel is given in Figure 3. Please note that the seismic hazard study of the tunnel refers to an SEE level (Safety Evaluation Earthquake) earthquake with 2500 years return period. That earthquake exhibits 0.63g (618.03 gal) PGA at the NHERP B/C boundary (rock). 
+</p> 
+
+<img src="Report/CurrentReportFigures/MAXSPECTRUMGROUP0.png" alt="MaxSpectrumSensorGroup0" class="center">
+<figcaption>
+    Figure 3. 5% damped acceleration response spectrum of the largest acceleration record along the TBM sections
+</figcaption>
+
+<h4 style="color:#226B9C"; >
+    3.3. PGA Values at the Deck Level
+</h4> 
+
+<p>
+    There are 3 accelerometers placed on the tunnel deck. The sensors record data in 3 axes simultaneously, named E, N and Z. All accelerometer sensors are placed in a way that their East(E) direction coincides with the tunnel longitudinal axis towards Asia. The recorded waveforms can be seen in Figure 4. Due to the large traffic-induced noise in the vertical direction, the absolute maxima of the deck are calculated only by using the horizontal accelerations. 
+</p> 
+
+
+<table align="center" border="1">
+
+    <caption>Table 2. Accelerometer values on deck</caption>
+  
+  <tr>
+    <th>
+        Accelerometer No
+    </th>
+    <th>
+        East(E) in gal
+    </th>
+    <th>
+        North(N) in gal
+    </th>
+    <th>
+        Vertical(Z) in gal
+    </th>
+  
+  </tr>
+  
+  <tr>
+    <td>
+        ACC10
+    </td>
+    <td>
+        @ABSMAXSENSOR27
+    </td>
+    <td>
+        @ABSMAXSENSOR28
+    </td>
+    <td>
+        @ABSMAXSENSOR29
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+        ACC11
+    </td>
+    <td>
+        @ABSMAXSENSOR30
+    </td>
+    <td>
+        @ABSMAXSENSOR31
+    </td>
+    <td>
+        @ABSMAXSENSOR32
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+        ACC12
+    </td>
+    <td>
+        @ABSMAXSENSOR33
+    </td>
+    <td>
+        @ABSMAXSENSOR34
+    </td>
+    <td>
+        @ABSMAXSENSOR35
+    </td>
+  </tr>
+
+</table>
+
+<h4 style="color:#226B9C"; >
+    3.4. PGA Values at the Surface Buildings
+</h4> 
+
+<p>
+    There are 3 accelerometers placed in the surface buildings. The sensors record data in 3 axes simultaneously, named E, N and Z. All accelerometer sensors are placed in a way that their East(E) direction coincides with the tunnel longitudinal axis towards Asia. 
+</p> 
+
+<p>
+    In OBA (Operation and Maintenance Building), there are two 3-axis accelerometers. OBA01 is placed in the monitoring room in the 1st floor, while OBA02 is placed on the ground floor at Yemekhane (Canteen). It is thus possible to obtain the response of OBA to the earthquake. In order to do that, a transfer function is created between these two sensors in all 3 directions and given in Figure 4. The period of the peak in the transfer function corresponds to the fundamental period of that structure in the relevant direction. Change in this period may refer to damages. In Figure 4, the zero-measurement period value of the peak responses are also given.
+</p> 
+
+<table align="center" border="1">
+
+    <caption>Table 3. Accelerometer values at the buildings</caption>
+  
+  <tr>
+    <th>
+        Accelerometer No
+    </th>
+    <th>
+        East(E) in gal
+    </th>
+    <th>
+        North(N) in gal
+    </th>
+    <th>
+        Vertical(Z) in gal
+    </th>
+  
+  </tr>
+  
+  <tr>
+    <td>
+        OBA01 (1st Floor)
+    </td>
+    <td>
+        @ABSMAXSENSOR36
+    </td>
+    <td>
+        @ABSMAXSENSOR37
+    </td>
+    <td>
+        @ABSMAXSENSOR38
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+        OBA02 (Ground Floor)
+    </td>
+    <td>
+        @ABSMAXSENSOR39
+    </td>
+    <td>
+        @ABSMAXSENSOR40
+    </td>
+    <td>
+        @ABSMAXSENSOR41
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+        VBE01
+    </td>
+    <td>
+        @ABSMAXSENSOR42
+    </td>
+    <td>
+        @ABSMAXSENSOR43
+    </td>
+    <td>
+        @ABSMAXSENSOR44
+    </td>
+  </tr>
+
+</table>
+
+<img src="Report/CurrentReportFigures/MAXTRANSFERFUNCTION.png" alt="MaxTransferFunc" class="center">
+<figcaption>
+    Transfer functions (Sa_output / Sa_input) of the OBA Building as compared to the reference periods
+</figcaption>
+
+<h4 style="color:#226B9C"; >
+    3.5. Deformations on the Seismic Joints
+</h4> 
+
+<p>
+    There are 6 laser distance measurements placed on the seismic joints. The displacement limit of these joints is 75mm in longitudinal and 50mm in transverse directions. The sensors record data in 3 axes simultaneously, named E, N and Z. All laser sensors are placed in a way that their East(E) direction coincides with the tunnel longitudinal axis towards Asia. The placement, notation and the sign convention of the joints can be seen in Figure 5. 
+</p> 
+
+
+</body>
+</html>
